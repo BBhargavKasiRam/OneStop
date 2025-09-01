@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loGin.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="return goToNextPage()">
+            <input type="text" id="enroll" placeholder="Enter Enrollment Number" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function goToNextPage() {
+            let enroll = document.getElementById('enroll').value;
+            if (enroll.trim() !== "") {
+                window.location.href = "about.html"; 
+                return false; 
+            } else {
+                alert("Please enter Enrollment Number!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
+

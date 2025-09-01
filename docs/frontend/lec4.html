@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneStop</title>
+  <link rel="stylesheet" href="lec4.css">
+</head>
+<body>
+  <div class="A">
+    <div class="B">
+      <div class="text-section">
+        <h1>WHO WE ARE</h1>
+        <h2>ABOUT US</h2>
+        <p>Group Members</p>
+        <p>Aditya Singh Pundir</p>
+        <p>Kasi Ram</p>
+        <p>Praneeth</p>
+        <p>Manoj</p>
+        <a href="login.html" class="login-btn">LOGIN</a>
+      </div>
+      <div class="image-section">
+        <img src="onestop.jpg" alt="Person Illustration">
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for Animation -->
+  <script>
+    window.addEventListener("load", () => {
+      document.querySelector(".text-section").classList.add("show");
+      document.querySelector(".image-section").classList.add("show");
+    });
+  </script>
+</body>
+</html>
